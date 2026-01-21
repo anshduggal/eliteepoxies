@@ -1,293 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Elite Epoxies - Premium Epoxy Solutions</title>
-    <meta name="description" content="Elite Epoxies - High performance epoxy putties, adhesives and repair compounds. Balance Seal - The professional choice for perfect sealing & repairs"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Epoxies — Coming Soon</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
 
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --primary-dark: #172554;
-            --accent: #e11d48;
-            --light: #f8fafc;
-            --gray: #64748b;
-            --dark: #0f172a;
-        }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    .container {
+      text-align: center;
+      padding: 40px;
+      max-width: 600px;
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #1e293b;
-            background-color: var(--light);
-            line-height: 1.6;
-        }
+    .logo {
+      width: 220px;
+      max-width: 80%;
+      margin-bottom: 40px;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+    }
 
-        /* Header & Nav */
-        header {
-            background: white;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 5%;
-        }
+    .coming-soon {
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+    .tagline {
+      font-size: 1rem;
+      opacity: 0.8;
+      letter-spacing: 1px;
+    }
 
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.1rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .nav-links a {
-            margin-left: 2.2rem;
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-            color: white;
-            padding: 9rem 5% 7rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.8rem, 6vw, 5.2rem);
-            margin-bottom: 1.2rem;
-            line-height: 1.1;
-        }
-
-        .hero p {
-            font-size: 1.35rem;
-            max-width: 680px;
-            margin: 0 auto 2.5rem;
-            opacity: 0.92;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2.2rem;
-            background-color: var(--accent);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s;
-            font-size: 1.1rem;
-        }
-
-        .btn:hover {
-            background-color: #be123c;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(225,29,72,0.35);
-        }
-
-        /* Product Showcase */
-        .product-showcase {
-            padding: 8rem 5%;
-            background: white;
-        }
-
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.2rem;
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-        }
-
-        .section-title p {
-            color: var(--gray);
-            font-size: 1.25rem;
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-        }
-
-        .product-image-container {
-            position: relative;
-        }
-
-        .product-image {
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .product-info h1 {
-            color: var(--primary-dark);
-            font-family: 'Playfair Display', serif;
-            font-size: 3.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .product-info h3 {
-            color: var(--accent);
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-bottom: 1.8rem;
-        }
-
-        .features {
-            margin: 2.5rem 0;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1.4rem;
-            font-size: 1.15rem;
-        }
-
-        .feature-bullet {
-            color: var(--accent);
-            font-size: 1.6rem;
-            margin-right: 1rem;
-            line-height: 1;
-        }
-
-        /* Responsive */
-        @media (max-width: 980px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-                gap: 4rem;
-            }
-            
-            .hero {
-                padding: 7rem 5% 6rem;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .logo {
-                font-size: 1.8rem;
-            }
-            
-            .nav-links a {
-                margin-left: 1.2rem;
-                font-size: 0.95rem;
-            }
-            
-            .product-info h1 {
-                font-size: 2.8rem;
-            }
-        }
-    </style>
+    .divider {
+      width: 80px;
+      height: 2px;
+      background: rgba(255,255,255,0.4);
+      margin: 25px auto;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Elite<span>Epoxies</span></div>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Applications</a>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
-    </header>
+  <div class="container">
+    <img src="elite.jpg" alt="Elite Epoxies Logo" class="logo" />
 
-    <section class="hero">
-        <h1>Premium Epoxy Solutions<br>Built to Last</h1>
-        <p>Professional grade epoxy compounds engineered for the most demanding repairs, sealing and bonding applications</p>
-        <a href="#balance-seal" class="btn">Discover Balance Seal →</a>
-    </section>
+    <div class="coming-soon">COMING SOON</div>
 
-    <section class="product-showcase" id="balance-seal">
-        <div class="container">
-            <div class="section-title">
-                <h2>Flagship Product</h2>
-            </div>
+    <div class="divider"></div>
 
-            <div class="product-grid">
-                <div class="product-image-container">
-                    <!-- Replace with your real product photo -->
-                    <img src="https://images.unsplash.com/photo-1581092160560-1c1e428e9d65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                         alt="Balance Seal Epoxy Putty" class="product-image">
-                </div>
-
-                <div class="product-info">
-                    <h1>Balance Seal</h1>
-                    <h3>Professional Epoxy Putty Compound</h3>
-
-                    <div class="features">
-                        <div class="feature-item">
-                            <span class="feature-bullet">•</span>
-                            Hand-mixable – ready to use in seconds
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-bullet">•</span>
-                            Hardens in 45–60 minutes (full cure 24h)
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-bullet">•</span>
-                            Can be drilled, tapped, sanded & painted
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-bullet">•</span>
-                            Excellent chemical & water resistance
-                        </div>
-                        <div class="feature-item">
-                            <span class="feature-bullet">•</span>
-                            Bonds to metal, wood, ceramic, concrete, fiberglass & many plastics
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn" style="margin-top: 1.5rem;">Get Balance Seal Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="tagline">
+      Premium Epoxy Solutions. Crafted to Last.
+    </div>
+  </div>
 
 </body>
 </html>
