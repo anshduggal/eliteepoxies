@@ -39,18 +39,20 @@
         }
         nav ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 25px;
         }
-        nav a {
+        nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: bold;
             transition: color 0.3s;
         }
-        nav a:hover { color: var(--gold); }
+        nav ul li a:hover { color: var(--gold); }
 
         .hero {
             background: linear-gradient(rgba(15,42,79,0.85), rgba(15,42,79,0.85)), url('elite.jpg');
@@ -97,8 +99,26 @@
         .about-text {
             font-size: 1.05rem;
             max-width: 900px;
-            margin: 0 auto;
+            margin: 0 auto 40px;
             text-align: justify;
+        }
+        .commitment {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .commitment ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .commitment li {
+            background: #f0f0f0;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
         }
 
         /* Product Grid */
@@ -154,10 +174,22 @@
 
         footer {
             background: #111;
-            color: #ccc;
+            color: #eee;
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9rem;
+            padding: 50px 20px;
+            font-size: 1.1rem;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+        .contact-info a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -178,7 +210,7 @@
             <li><a href="metal.html">Metal Filled</a></li>
             <li><a href="potting.html">Potting Compound</a></li>
             <li><a href="road.html">Road Furniture Fixing</a></li>
-            <!-- Add these two when you create the files -->
+            <!-- Uncomment when ready -->
             <!-- <li><a href="tile.html">Tile Grout</a></li> -->
             <!-- <li><a href="clear.html">Clear Epoxy</a></li> -->
         </ul>
@@ -198,8 +230,17 @@
             <br>
             <p>Our flagship product range, <strong>Balance Seal</strong>, represents the perfect balance of strength, durability, and ease of application. Developed through careful formulation and testing, Balance Seal is available in multiple variants to meet diverse requirements across industries from construction and flooring to industrial maintenance, electrical, and general bonding applications.</p>
             <br>
-            <p><strong>Our Commitment:</strong><br>
-            • Quality First • Application-Focused Solutions • Consistency & Reliability • Customer-Centric Approach</p>
+            <p>At Elite Epoxies, we believe that performance should be dependable and predictable. Every formulation is designed to offer excellent adhesion, chemical resistance, and long-term stability, ensuring confidence at every stage of use. We place strong emphasis on raw material selection, process control, and quality assurance to maintain consistent results batch after batch.</p>
+        </div>
+
+        <div class="commitment">
+            <h3>Our Commitment</h3>
+            <ul>
+                <li>Quality First</li>
+                <li>Application-Focused Solutions</li>
+                <li>Consistency & Reliability</li>
+                <li>Customer-Centric Approach</li>
+            </ul>
         </div>
     </section>
 
@@ -209,9 +250,8 @@
         
         <div class="products-grid">
 
-            <!-- 1 -->
             <div class="product-card">
-                <img src="putty.png" alt="Epoxy Putty"> <!-- upload your photo -->
+                <img src="putty.jpg" alt="Epoxy Putty">
                 <div class="card-body">
                     <h3>Balance Seal – Epoxy Putty</h3>
                     <p>Hand-moldable epoxy putty for fast repairs on metal, concrete, wood & masonry.</p>
@@ -219,9 +259,8 @@
                 </div>
             </div>
 
-            <!-- 2 -->
             <div class="product-card">
-                <img src="general.png" alt="General Purpose">
+                <img src="general.jpg" alt="General Purpose">
                 <div class="card-body">
                     <h3>Balance Seal – General Purpose Epoxy</h3>
                     <p>Versatile two-component epoxy for bonding, sealing and general industrial use.</p>
@@ -229,9 +268,8 @@
                 </div>
             </div>
 
-            <!-- 3 -->
             <div class="product-card">
-                <img src="metal.png" alt="Metal Filled">
+                <img src="metal.jpg" alt="Metal Filled">
                 <div class="card-body">
                     <h3>Balance Seal – Metal Filled Epoxy</h3>
                     <p>High-strength metal-filled compound for repairing and rebuilding metal parts.</p>
@@ -239,9 +277,8 @@
                 </div>
             </div>
 
-            <!-- 4 -->
             <div class="product-card">
-                <img src="potting.png" alt="Potting">
+                <img src="potting.jpg" alt="Potting">
                 <div class="card-body">
                     <h3>Balance Seal – Potting Compound</h3>
                     <p>Protective epoxy for encapsulating and insulating electrical & electronic components.</p>
@@ -249,9 +286,8 @@
                 </div>
             </div>
 
-            <!-- 5 -->
             <div class="product-card">
-                <img src="road.png" alt="Road Fixing">
+                <img src="road.jpg" alt="Road Fixing">
                 <div class="card-body">
                     <h3>Balance Seal – Road Furniture Fixing</h3>
                     <p>Heavy-duty three-component epoxy for anchoring road studs, reflectors & safety fixtures.</p>
@@ -259,7 +295,7 @@
                 </div>
             </div>
 
-            <!-- 6 & 7 – Add when you create the files -->
+            <!-- Add these when files are created -->
             <!--
             <div class="product-card">
                 <img src="tile.jpg" alt="Tile Grout">
@@ -283,13 +319,15 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- FOOTER with contact info -->
     <footer>
-        <p>&copy; 2026 Elite Epoxies • All Rights Reserved</p>
+        <p>&copy; 2026 Elite Epoxies. All rights reserved.</p>
+        <div class="contact-info">
+            <p><strong>Get in Touch:</strong></p>
+            <p>Email: <a href="mailto:info@eliteepoxies.in">info@eliteepoxies.in</a></p>
+            <p>Phone: <a href="tel:+919999940115">+91 9999940115</a></p>
+        </div>
         <p>Created by Ansh Duggal</p>
-        <p style="margin-top:15px;">
-            <a href="mailto:your@email.com" style="color:var(--gold); text-decoration:none;">Get in Touch</a>
-        </p>
     </footer>
 
 </body>
